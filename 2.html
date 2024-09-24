@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h2> Formulário</h2>
+        <!--action define o destino dos dads do formulário-->
+        <form action="https://google.com/search" method="get">
+        <!--dentro do form vao os inputs-->
+
+        <label for="name">Nome</label>
+        <input id="name" type=text" name="q" value="">
+        <br>
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <br>
+        <label for="">Senha</label>
+        <input id="Senha" type="password">
+        <label for="validsenha">Confirme a senha</label>
+        <input id="validsenha" type="password">
+        <br>
+        <label for="browser">Escolha uma região</label>
+        <input list="browsers" name="região" id="região">
+        <datalist id="browsers">
+            <option value="Sul">
+            <option value="Sudeste">
+            <option value="Centro Oeste">
+            <option value="Norte">
+            <option value="Nordeste">
+        </datalist>
+        <br>
+        <label>Gênero</label>
+        <br>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" id="masc" value="masc"> <br>
+        <label for="masc">Feminino</label>
+        <input type="radio" name="genero" id="fem" value="fem"> <br>
+        <label for="masc">Outro</label>
+        <input type="radio" name="genero" id="outro" value="outro">
+
+        <br>
+        <label for="termo">Aceito termos e condições:</label>
+        <input id="termo" type="checkbox">
+        <br>
+        <input type="submit">
+
+
+        </form>
+    </div>
+</body>
+</html>
