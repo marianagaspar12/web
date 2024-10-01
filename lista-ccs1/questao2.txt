@@ -1,0 +1,1 @@
+Seletor é o que define qual parte do HTML receberá a regra CSS. Existem diversas formas de utilizar seletor, no entanto existem quatro seletores mais comuns: seletor de tag(elemento), seletor universal, seletor de ID, seletor de classe e o seletor de atributo. Cada um tem um especificidade diferente.
