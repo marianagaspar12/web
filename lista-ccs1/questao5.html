@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>   
+   <title>Exemplo especificidade de seletores</title>
+   <style>
+      /*regra 1*/ li{color:red;}
+      /*regra 2*/ .churras{color:green;}
+      /*regra 3*/ .fruta{color:gray}
+      /*regra 4*/ li+li.churras{color: black;}
+      /*regra 5*/ .churras[draggable="true"]{color: magenta;}
+      /*regra 6*/ #lip1,#lip2,#lip3{color:blue}
+      /*regra 7*/ #lip3.fruta{color:orange}
+      /*regra 8*/ ol>li.churras#lip5{color:purple}
+   </style>
+</head>
+<body>   
+   <ol>
+   <!--item 1--> <li id="lip0">Abacaxi segue a regra 1 = red</li>
+   <!--item 2--> <li           class="fruta">Melão - gray porque segue a classe fruta</li> 
+   <!--item 3--> <li id="lip2" class="fruta">Pera- será blue por conta do seletor de ID declarado na regra 6</li>
+   <!--item 4--> <li id="lip3" class="fruta">Uva -  terá a cor laranja pois o ultimo seletor ID declarado é aquele que vai valer a regra</li>
+   <!--item 5--> <li id="lip4" cls=as"fruta">Maçã - gray pois segue a regra 3 da classe</li>
+   <!--item 6--> <li           class="churras">Carne - black porque o seletor é mais específico</li>
+   <!--item 7--> <li           class="churras">Linguiça - black segue a mesma regra da carne</li>
+   <!--item 8--> <li id="lip7" class="churras" draggable="true">Pão de alho - magenta seguindo a regra5 da classe</li>
+   </ol>   
+</body>
+</html>
