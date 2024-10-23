@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display: grid;
+            grid-template-areas: 
+            "head   head   head"
+            "banner banner banner"
+            "menu   main   aside"
+            "footer footer footer";
+            grid-template-rows: 200px;
+        }
+        @media (min-width:500px)
+        and (max-width:600px){
+            body
+        {
+            display: grid;
+            grid-template-areas: 
+            "head"
+            "banner"
+            "menu"  
+            "main"
+            "aside"
+            "footer";
+            grid-template-rows: 200px;
+        }
+        .d1{display: none;}
+        }
+        .d1
+        {
+            grid-area:head;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        .d2
+        {
+            grid-area:banner;
+            background-color: bisque;
+        }
+        .d3
+        {
+            grid-area:menu;
+            background-color: rgb(110, 42, 165);
+        }
+        .d4
+        {
+            grid-area:main;
+            background-color: blue;
+        }
+        .d5
+        {
+            grid-area:aside;
+            background-color: olive;
+        }
+        .d6
+        {
+            grid-area: footer;
+            background-color: firebrick;
+        }
+    </style>
+</head>
+<body>
+    <div class="d1">HEAD</div>
+    <div class="d2">Banner</div>
+    <div class="d3">MENU</div>
+    <div class="d4">Main</div>
+    <div class="d5">aside</div>
+    <div class="d6">footer</div>
+</body>
+</html>
