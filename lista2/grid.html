@@ -17,6 +17,7 @@
         .container{
             display: grid;
             grid-template-rows: 100px 200px 300px 200px;
+            grid-template-columns: 300px 1fr 1fr;
             grid-template-areas: 
             "header header    header"
             "nav    cabecalho cabecalho"
@@ -28,24 +29,45 @@
                 display: flex;
                 align-items: center;
                 background-color: rgba(0, 0, 0, 0.925);
+                color: white;
             }
             .navegacao{
                 grid-area: nav;
                 background-color: rgb(233, 153, 4);
+                place-items: center;
+                text-align: center;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
 
             }
             .cabecalho{
                 grid-area: cabecalho;
                 background-color: rgb(30, 121, 240);
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                place-items: center;
+                text-align: center;
             }
             .conteudo{
                 grid-area: conteudo;
-                background-color: rgb(172, 15, 172)
+                background-color: rgb(172, 15, 172);
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                place-items: center;
+                text-align: center;
             }
             .rodape{
                 grid-area: rodape;
-                background-color: rgb(45, 45, 245)
-            }
+                background-color: rgb(45, 45, 245);
+                color: white;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                align-items: center;
+                place-items: center;
+                text-align: center;
     </style>
 </head>
 <body class="container">
