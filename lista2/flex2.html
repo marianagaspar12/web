@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 Lista Flex</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;    
+            border: 1px solid black;
+            height: 99.7svh;
+            width: 70svh;
+            position: fixed;
+            left: 33%;
+            text-align: center;
+            gap: 15px; 
+        }
+
+        .box1, .box2, .box3, .box4, .box5, .box6 {
+            border: 1px solid rgb(126, 124, 124);
+            background-color: rgb(156, 158, 158);
+            height: 60px;
+            width: 500px;
+        }
+
+        .box5 {
+            background-color: rgb(156, 158, 158);
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+        }
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 100px; 
+        }
+        .box4{
+                margin-bottom: 180px
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Company Logo</h3>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>
