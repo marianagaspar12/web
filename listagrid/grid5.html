@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 5</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "left   banner right"
+            "left   main   right"
+            "left   low    right"
+            "footer footer footer";
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 1fr 7fr 1fr 1fr;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        @media (min-width:500px)
+        and (max-width:550px){
+            body{
+                display: grid; 
+                grid-template-areas: 
+                "header"
+                "banner"
+                "left"
+                "main"
+                "right"
+                "low"
+                "footer";
+                grid-template-columns: 500px;
+            }
+        }
+        .header{
+            grid-area: header;
+            background-color: rgb(223, 137, 9);
+        }
+        .left{
+            grid-area: left;
+            background-color: rgb(6, 182, 6);
+        }
+        .banner{
+            grid-area: banner;
+            background-color: rgb(219, 22, 22);
+        }
+        .main{
+            grid-area: main;
+            background-color: rgb(41, 102, 233);
+        }
+        .right{
+            grid-area: right;
+            background-color: rgb(250, 153, 250);
+        }
+        .low{
+            grid-area: low;
+            background-color: rgb(13, 75, 28);
+            display: grid;
+            align-items: center;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgb(4, 4, 110);
+        }
+        .header, .banner, .footer, .main{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+        .left, .right{
+            display: grid;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Header</div>
+    <div class="left">Left Aside</div>
+    <div class="banner">Banner</div>
+    <div class="main">Main Content</div>
+    <div class="right">Right Aside</div>
+    <div class="low">Low Content</div>
+    <div class="footer">Footer</div>
+</body>
+</html>
