@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 4</title>
+    <style>
+        body{
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            grid-template-areas:
+            "boxA . boxB"
+            "boxC boxD boxD";
+            grid-template-columns: 1fr 1fr 1fr;  
+            gap: 10px;
+            font-size: 40px;
+            
+        }
+        .boxA{
+            grid-area: boxA;
+            background-color: rgb(41, 40, 40);
+            color: white;
+            
+        }
+        .boxB{
+            grid-area: boxB;
+            background-color: rgb(41, 40, 40);
+            color: white;
+        }
+        .boxC{
+            grid-area: boxC;
+            background-color: rgb(41, 40, 40);
+            color: white;
+        }
+        .boxD{
+            grid-area: boxD;
+            background-color: rgb(41, 40, 40);
+        }
+        .boxD{
+            padding: 50px;
+            display: grid;
+            grid-template-areas:
+            "span1 span2 span3"
+            "span4 span5 span6";
+            gap: 10px;
+        }
+        .span1{
+            grid-area: span1;
+            background-color: rgb(138, 135, 135);
+            display: grid;
+            align-items: center;
+            
+        }
+        .span2{
+            grid-area: span2;
+            background-color: rgb(138, 135, 135);
+            display: grid;
+            align-items: center;
+        }
+        .span3{
+            grid-area: span3;
+            background-color: rgb(138, 135, 135);
+            display: grid;
+            align-items: center;
+        }
+        .span4{
+            grid-area: span4;
+            background-color: rgb(138, 135, 135);
+            display: grid;
+            align-items: center;
+        }
+        .span5{
+            grid-area: span5;
+            background-color: rgb(138, 135, 135);
+            display: grid;
+            align-items: center;
+            justify-items: space-around;
+        }
+        .span6{
+            grid-area: span6;
+            background-color: rgb(138, 135, 135);
+            display: grid;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxA">A</div>
+    <div class="boxB">B</div>
+    <div class="boxC">C</div>
+    <div class="boxD">
+        <span class="span1">E</span>
+        <span class="span2">F</span>
+        <span class="span3">G</span>
+        <span class="span4">M</span>
+        <span class="span5">I</span>
+        <span class="span6">J</span>
+    </div>
+</body>
+</html>
