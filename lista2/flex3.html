@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex3</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(206, 204, 204);
+        }
+        .container{
+            width: 450px;
+            background-color: white;
+            border: 1px solid grey;
+        }
+        .box1{
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid #333232;
+        }
+        .box2{
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid #333232;
+        }
+        .box3{
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid #333232;
+        }
+        .box4{
+            display: flex;
+            align-items: center;
+            padding: 16px;
+        }
+        .avatar{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .nome {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+            padding: 15px;
+        }
+        .endereço{
+            font-size: 14px;
+            margin: 0px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img src="https://www.petz.com.br/blog/wp-content/uploads/2018/10/dente-de-coelho.jpg" alt="Linda Hart" class="avatar">
+            <div class="info">
+                <p class="nome">Linda Hart</p>
+                <p  class="endereço">6765 Shady Ln Dr</p>
+            </div>
+        </div>
+        <div class="box2">
+            <img src="https://super.abril.com.br/wp-content/uploads/2020/09/04-09_gato_SITE.jpg?crop=1&resize=1212,909" alt="Dean Sullivan" class="avatar">
+            <div class="info">
+                <p class="nome">Dean Sullivan</p>
+                <p class="endereço">6727 Airplane Ave</p>
+                </div>
+        </div>
+        <div class="box3">
+            <img src="https://blog-static.petlove.com.br/wp-content/uploads/2024/04/29030254/cachorro-vira-lata-Petlove.jpg" alt="Roger Medina" class="avatar">
+            <div class="info">
+                <p class="nome">Roger Medina</p>
+                <p class="endereço">2420 Paddock Way</p>
+            </div>
+        </div>
+        <div class="box4">
+            <img src="https://www.passaro.org/wp-content/uploads/2023/08/passaro-principe.webp" alt="Elizabeth Austin" class="avatar">
+            <div class="info">
+                <p class="nome">Elisabeth Austin</p>
+                <p class="endereço">6685 Blossom Hill Rd</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
