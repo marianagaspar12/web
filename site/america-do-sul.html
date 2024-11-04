@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-areas:
+            "header header header" 
+            "banner banner banner"
+            "left   main   main"
+            "footer footer footer";
+            gap: 5px;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 1fr 0.5fr 6fr 1fr;
+            margin: 0;
+        }
+        .header, .banner, .left, .main, .footer {
+            background-color: rgb(138, 135, 135);
+            color: white;
+            padding: 10px;
+        }
+        .header { grid-area: header; }
+        .banner { grid-area: banner; }
+        .left { grid-area: left; }
+        .main { grid-area: main; }
+        
+        .footer {
+            grid-area: footer;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .destinos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .destinos a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .intro {
+            text-align: center;
+        }
+        .compra {
+            text-align: center;
+            font-weight: bold;
+        }
+        .contato {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .contato img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .sede p {
+            margin: 0;
+        }
+        .sede {
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .destino {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+            background-color: rgb(53, 52, 52);
+            padding: 10px;
+        }
+        .destino img {
+            width: 300px; 
+            height: auto; 
+            border-radius: 5px;
+        }
+        .valor {
+            font-weight: bold;
+            color: white;
+        }
+        .carrinho {
+            margin-top: 20px;
+            background-color: rgb(53, 52, 52);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .botao-avancar {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(140, 140, 243);
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"> 
+        <div class="intro">
+            <h2>Explora Mundo</h2>
+            <p>Descubra aqui o seu local de viagem</p>
+        </div>
+    </div>
+    <div class="banner">
+        <nav class="destinos">
+            <a href="sitestart.html">Europa</a>
+            <a href="america-do-norte.html">América do Norte</a>
+            <a href="">América do Sul</a>
+        </nav>
+    </div>
+    <div class="left">
+        <div class="compra">
+            <p>Carrinho</p>
+        </div>
+        <div class="carrinho">
+            <h4>Resumo da Compra</h4>
+            <p><b>Destino:</b> Itália</p>
+            <p><b>Quantidade:</b> 1</p>
+            <p class="valor"><b>Total:</b> R$ 4.500,00</p>
+            <button class="botao-avancar">Avançar para o Carrinho</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="destino">
+            <img src="https://montesclarosecoturismo.com.br/wp-content/uploads/2021/10/44-1.jpg" alt="Imagem do Canadá">
+            <div class="descricao">
+                <h3>Chile</h3>
+                <p>Explore o fascinante Chile, com seus destinos cheios de encanto em Santiago e Valparaíso. Uma viagem repleta de paisagens deslumbrantes, aventuras ao ar livre e vinícolas renomadas.</p>
+                <p class="valor">Preço: R$ 3.000,00</p>
+            </div>
+        </div>
+
+        <div class="destino">
+            <img src="https://www.rodei.com.br/wp-content/uploads/2011/09/Buenos-header.jpeg" alt="Imagem do México">
+            <div class="descricao">
+                <h3>Argentina</h3>
+                <p>Explore a encantadora Argentina, com seus destinos cheios de charme em Buenos Aires e Mendoza. Uma viagem repleta de tradição, beleza natural e sabores autênticos.</p>
+                <p class="valor">Preço: R$ 2.800,00</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contato">
+            <img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316_640.png" alt="whatsapp">
+            <div>
+                <p id="numero">(47) 90990-4040</p>
+                <p>Entre em contato conosco</p>
+            </div>
+        </div>
+        <div class="sede">
+            <p>Visite nossa sede física</p>
+            <p>Gaspar - Bela Vista</p>
+            <p>Rua Zezinho, 890</p>
+        </div>
+    </div>
+</body>
+</html>
