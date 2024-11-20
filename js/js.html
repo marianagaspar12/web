@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hudson Borges</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+	</head>
+    <body>
+        <p id="texto">Helo!</p>
+
+        <div>
+            <button type="button" onclick="imprime()">Hello</button>
+        </div>
+        <p id="clicado">Helo!</p>
+        <div>
+            <button id="click" type="button">cliques</button>
+        </div>
+        <script>
+            function imprime(){
+            let msg="Hello!"
+            console.log(msg);
+            alert(msg)
+            (document.querySelector("#texto")).innerHTML=msg
+            }
+            var clique=0;
+            function incremento(){
+                clique+=1;
+                clicado.innerHTML=clique
+            }
+            click.addEventListener("click", incremento)
+
+            
+        </script>
+    </body>

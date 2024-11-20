@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        min-height: 100svh;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <input type="text" id="text">
+        <button id="btverifica"></button>
+        <p id="resultado"></p>
+    </div>
+<script>
+    let presult=document.querySelector("#resultado")
+    let inputText=document.querySelector("text")
+    document.querySelector("click", ()=>{
+        if(palindromo(inputText.value)){
+            presult.innerHTML="Eh palindromo"
+        }
+        else{
+            presult.innerHTML="Nao eh palindromo"
+        }
+    })
+
+    function palindromo(s){
+        
+        return true;
+    }
+</script>
+    
+</body>
+</html>
