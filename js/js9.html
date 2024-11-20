@@ -20,21 +20,22 @@
         <p id="resultado"></p>
     </div>
 <script>
-    let presult=document.querySelector("#resultado")
-    let inputText=document.querySelector("text")
-    document.querySelector("click", ()=>{
+   let presult=document.querySelector("#resultado")
+   let inputText=document.querySelector("text") 
+   
+    function palindromo(inicial){
+        return inicial==inicial.split("").reverse().join("")
+    }
+
+    
+    document.querySelector("#btverifica").addEventListener("click", () => {
         if(palindromo(inputText.value)){
-            presult.innerHTML="Eh palindromo"
+            presult.innerHTML="Eh palindromo";
         }
         else{
-            presult.innerHTML="Nao eh palindromo"
+            presult.innerHTML="Nao eh palindromo";
         }
     })
-
-    function palindromo(s){
-        
-        return true;
-    }
 </script>
     
 </body>
